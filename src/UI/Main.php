@@ -41,4 +41,15 @@ class main extends PluginBase implements Listener {
                         $player->sendtitle($cfg->get("title"));
                     }
             }
+            public function cmd(CommandSender $p, Command $cmd, string $label, array $args):bool{
+            if($cmd->getName()){
+                case 'gift':
+            if($sender instanceof Player){
+            $this->GiftUI($p)
+            }
+                break;
+            }
+                
+                return ture;
+            }
 }
